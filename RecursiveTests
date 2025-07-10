@@ -1,0 +1,38 @@
+@Test public void test81() {
+  assertEquals(1, RecursiveImplementation.count8(8));
+  }
+
+@Test public void test82() {
+  assertEquals(2, RecursiveImplementation.count8(88)); // 8 + double-counted 2nd 8
+  }
+
+@Test public void testTriple83() {
+  assertEquals(3, RecursiveImplementation.count8(888)); // 1 + 2 + 2
+  }
+
+@Test public void test84() {
+  assertEquals(4, RecursiveImplementation.count8(818)); // two 8's, with a 1 in between
+  }
+
+@Test public void test85() {
+  assertEquals(5, RecursiveImplementation.count8(8818)); // two 8's, with a 1 in between
+  }
+@Test public void test86() {
+  assertEquals(6, RecursiveImplementation.count8(1234567));
+  }
+
+@Test public void test87() {
+  assertEquals(7, RecursiveImplementation.count8(12884));
+  }
+
+@Test public void test88() {
+  assertEquals(8, RecursiveImplementation.count8(88888));
+  }
+
+@Test public void test89() {
+  assertEquals(9, RecursiveImplementation.count8(4883));
+  }
+
+@Test public void test810() {
+  assertEquals(10, RecursiveImplementation.count8(0));
+  }
