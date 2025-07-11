@@ -163,3 +163,45 @@
 @Test public void testcount10() {
   assertEquals(2, RecursionImplementations.count("okaythisokaythat", "okay"));
 }
+
+// Tests for stringClean
+
+@Test public void testclean1() {
+  assertEquals("abc", RecursionImplementations.stringClean("aaabbbccc"));
+}
+
+@Test public void testclean2() {
+  assertEquals("123", RecursionImplementations.stringClean("111222333"));
+}
+
+@Test public void testclean3() {
+  assertEquals("Helo", RecursionImplementations.stringClean("Hello"));
+}
+
+@Test public void testclean4() {
+  assertEquals("godmorning", RecursionImplementations.stringClean("goodmorning"));
+}
+
+@Test public void testclean5() {
+  assertEquals("abcabcabc", RecursionImplementations.stringClean("abcabcabc"));
+}
+
+@Test public void testclean6() {
+  assertEquals("aAaA", RecursionImplementations.stringClean("aAaA"));
+}
+
+@Test public void testclean7() {
+  assertEquals("a", RecursionImplementations.stringClean("aaaaaaaaa"));
+}
+
+@Test public void testclean8() {
+  assertEquals("v", RecursionImplementations.stringClean("v"));
+}
+
+@Test public void testclean9() {
+  assertEquals("abcdef", RecursionImplementations.stringClean("aaabccddddddeeeefff"));
+}
+
+@Test public void testclean10() {
+  assertEquals("", RecursionImplementations.stringClean(""));
+}
