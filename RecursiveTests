@@ -1,3 +1,5 @@
+//Tests for count8
+
 @Test public void test81() {
   assertEquals(1, RecursionImplementations.count8(8));
 }
@@ -37,6 +39,7 @@
   assertEquals(0, RecursionImplementations.count8(0));
 }
 
+//Tests for countHi
   
 @Test public void testhi1() {
   assertEquals(1, RecursionImplementations.countHi("hi"));
@@ -78,6 +81,8 @@
   assertEquals(0, RecursionImplementations.countHi("hello"));
 }
 
+//Tests for countHi2
+
 @Test public void testhi21() {
   assertEquals(1, RecursionImplementations.countHi2("hi"));
 }
@@ -115,4 +120,46 @@
 
 @Test public void testhi210() {
   assertEquals(3, RecursionImplementations.countHi2("xhihihixhihxihxihi"));
+}
+
+//Tests for count
+
+@Test public void testcount1() {
+  assertEquals(1, RecursionImplementations.count("catdogcow", "cat"));
+}
+
+@Test public void testcount2() {
+  assertEquals(3, RecursionImplementations.count("dogcatdogdog", "dog"));
+}
+
+@Test public void testcount3() {
+  assertEquals(1, RecursionImplementations.count("abcdefghijk", "abc"));
+}
+
+@Test public void testcount4() {
+  assertEquals(1, RecursionImplementations.count("123456789", "123"));
+}
+
+@Test public void testcount5() {
+  assertEquals(1, RecursionImplementations.count("doremi", "re"));
+}
+
+@Test public void testcount6() {
+  assertEquals(0, RecursionImplementations.count("he", "help"));
+}
+
+@Test public void testcount7() {
+  assertEquals(1, RecursionImplementations.count("cowcowwolf", "dog"));
+}
+
+@Test public void testcount8() {
+  assertEquals(3, RecursionImplementations.count("cowcocowcow", "cow"));
+}
+
+@Test public void testcount9() {
+  assertEquals(6, RecursionImplementations.count("abcaedajkaahgac", "a"));
+}
+
+@Test public void testcount10() {
+  assertEquals(2, RecursionImplementations.count("okaythisokaythat", "okay"));
 }
