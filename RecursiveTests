@@ -77,3 +77,42 @@
 @Test public void testhi10() {
   assertEquals(0, RecursionImplementations.countHi("hello"));
 }
+
+@Test public void testhi21() {
+  assertEquals(1, RecursionImplementations.countHi2("hi"));
+}
+
+@Test public void testhi22() {
+  assertEquals(0, RecursionImplementations.countHi2("xhi"));
+}
+
+@Test public void testhi23() {
+  assertEquals(1, RecursionImplementations.countHi2("hix"));
+}
+
+@Test public void testhi24() {
+  assertEquals(2, RecursionImplementations.countHi2("hixhihi"));
+}
+
+@Test public void testhi25() {
+  assertEquals(1, RecursionImplementations.countHi2("xhi123hi"));
+}
+
+@Test public void testhi26() {
+  assertEquals(2, RecursionImplementations.countHi2("hihixhi"));
+}
+
+@Test public void testhi27() {
+  assertEquals(1, RecursionImplementations.countHi2("ahixhi"));
+}
+
+@Test public void testhi28() {
+  assertEquals(2, RecursionImplementations.countHi2("ahibhi"));
+}
+@Test public void testhi29() {
+  assertEquals(0, RecursionImplementations.countHi2("xhixhi"));
+}
+
+@Test public void testhi210() {
+  assertEquals(3, RecursionImplementations.countHi2("xhihihixhihxihxihi"));
+}
