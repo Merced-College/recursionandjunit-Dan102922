@@ -61,3 +61,20 @@ public static int countHi2(String str) {
     return countHi2(str.substring(1));
   }
 }
+
+public static int count(String str, String sub) {
+  // The Base case: if there is less characters than there is in the sub, then it won't work
+  if (str.length() < sub.length()) {
+    return 0;
+}
+
+  // 1st case: Match found, catch it and 
+  if (str.startsWith(sub)) {
+    return 1 + count(str.substring(sub.length()), sub) ;
+  }
+
+  // Case 2: character doesn't match with the sub, move on to the next
+  else {
+    return count(str.substring(1));
+  }
+}
