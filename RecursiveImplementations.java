@@ -24,3 +24,20 @@ public static int count8(int n) {
     return count8(n / 10);
   }
 }
+
+public static int countHi(String str) {
+  // The Base case: if there is only one character, it can't spell hi at all
+  if (str.length() < 2) {
+    return 0;
+}
+
+  // 1st case: If first two characters are hi,
+  if (str.substring(0, 2) == "hi") {
+    return 1 + countHi(str.substring(2));
+  }
+
+  // Case 2: Not hi, skips a character
+  else {
+    return countHi(str.substring(1));
+  }
+}
